@@ -8,7 +8,7 @@ ext {
 
     publishedGroupId = 'com.oceanize.testlib' //Anything
     libraryName = 'testlib' //android Project name
-    artifact = 'library' //artifact/module name like app or library
+    artifact = 'testlib' //artifact/module name like app or library
 
     libraryDescription = 'A library to test on Android'
 
@@ -25,15 +25,14 @@ ext {
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
     allLicenses = ["Apache-2.0"]
 }
-
 android {
-    compileSdkVersion 26
+    compileSdkVersion 27
 
 
     publishNonDefault true
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 26
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
 
@@ -53,7 +52,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
